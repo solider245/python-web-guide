@@ -640,7 +640,8 @@ Benchmark
     sudo apt-get install apache2-utils
     ab -c 并发数量 -n 总数量 url
 
-Ffmpeg
+
+Ffmpeg && youbute-dl
 -------------------------------------------------------------
 
 .. code-block:: shell
@@ -668,6 +669,8 @@ Ffmpeg
 
    # youtube-dl 下载音频: https://askubuntu.com/questions/178481/how-to-download-an-mp3-track-from-a-youtube-video
    youtube-dl --extract-audio --audio-format mp3 <video URL>
+   # use socks5 proxy
+   youtube-dl --proxy 'socks5://127.0.0.1:1080' [URL]
 
 .. code-block:: python
 
