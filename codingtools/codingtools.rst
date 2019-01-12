@@ -275,16 +275,17 @@ Profiler
 - youbute-dl: https://github.com/rg3/youtube-dl 命令行油管视频下载工具
 - aria2: https://aria2.github.io/ 轻量级的命令行下载工具
 - FFmpeg: 强大的视频处理工具，可以用来截图，截取视频片段等
-- Camtasia/ScreenFlow: 屏幕录制，剪辑工具，收费。笔者用来录制屏幕
+- ScreenFlow/Camtasia: 屏幕录制，剪辑工具，收费。笔者用来录制屏幕
 - TunesKit Video Cutter(mac): 视频分割、合并工具
 - iZotope RX6: 音频降噪工具，去除杂音、呼吸声等等，收费
 - MediaInfo: 查看视频信息
-- HandBrake: 视频压缩工具，免费工具。直接从 Camtasia 等录屏工具导出的视频体积可能会非常大，推荐压缩后上传到网站
+- HandBrake: 视频压缩工具，免费工具。直接从录屏工具导出的视频体积可能会非常大，推荐压缩后上传到网站
 - SketchBookPro/Deskscribble(收费): 白板/黑板工具，配合 wacom 手写板可以把屏幕当成黑板或者白板使用。模仿可汗学院的授课方式，笔者在讲述 Python 算法的课程里使用到。
 - Wacom 手绘板：用来实现屏幕手写，配合绘图或者白板软件当做黑板使用，方便手写做一些演示或者推导。
 - Blue yeti/samson METEOR usb电容麦克风：使用 mac 内置麦克风音频效果比较差，可以考虑专业的播客级麦克风，录制出来的视频声音要清楚很多。usb 麦克风即插即用，非常方便。
 - VideoScribe: 制作手绘风格视频，提升视频趣味性。收费
 - 课件制作: PowerPoint, Keynote, AxeSlide, Focusky 等
+- Mousepose: 鼠标高亮增强工具
 
 
 HTML Presentation Tools
