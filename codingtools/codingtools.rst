@@ -285,7 +285,7 @@ Profiler
 - Blue yeti/samson METEOR usb电容麦克风：使用 mac 内置麦克风音频效果比较差，可以考虑专业的播客级麦克风，录制出来的视频声音要清楚很多。usb 麦克风即插即用，非常方便。
 - VideoScribe: 制作手绘风格视频，提升视频趣味性。收费
 - 课件制作: PowerPoint, Keynote, AxeSlide, Focusky 等
-- Mousepose: 鼠标高亮增强工具
+- Mousepose: 鼠标高亮增强工具。演示的时候可以高亮部分区域
 
 
 HTML Presentation Tools
