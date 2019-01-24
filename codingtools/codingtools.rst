@@ -20,7 +20,7 @@
 - sshfs: 本地挂在服务器文件夹
 - tmate: https://tmate.io 终端共享工具，结对编程。很多现代化编辑器 vscode, atom 提供结对编程的插件。
 - asciinema: 终端会话记录工具。https://asciinema.org/
-- oh-my-zsh。替代原生的bash shell，提供了好多方便的特性和漂亮主题，支持插件。linux/mac下vim+tmux+zsh简直是绝配，甚至可以直接在服务器上方便地撸代码，跟本地开发体验没区别。
+- oh-my-zsh。替代原生的bash shell，提供了好多方便的特性和漂亮主题，支持插件比如 zsh autocomplete。linux/mac下vim+tmux+zsh简直是绝配，甚至可以直接在服务器上方便地撸代码，跟本地开发体验没区别。
 - item2(mac)。替代原生的终端。https://medium.com/@RyanDavidson/make-your-terminal-more-colourful-and-productive-with-iterm2-and-zsh-11b91607b98c
 - brew(mac)。类似ubuntu下的apt-get，可以方便安转各种软件和工具。
 - Alfred(mac): mac 下一款功能强大的工具，不过我一般只用它快速打开软件(比如直接输入app名前缀快速切换不同app)。可以用 python 编写一些自己的 workflow 提高效率(https://github.com/deanishe/alfred-workflow)，比如把时间戳转成日期等。 https://github.com/derimagia/awesome-alfred-workflows
@@ -286,6 +286,7 @@ Profiler
 - VideoScribe: 制作手绘风格视频，提升视频趣味性。收费
 - 课件制作: PowerPoint, Keynote, AxeSlide, Focusky 等
 - Mousepose: 鼠标高亮增强工具。演示的时候可以高亮部分区域，其他部分置灰
+- 免费字体：思源字体(思源宋体、思源黑体)；站酷字体；
 
 
 HTML Presentation Tools
