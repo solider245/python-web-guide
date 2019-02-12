@@ -300,3 +300,9 @@ HTML Presentation Tools
 - remark: A simple, in-browser, markdown-driven slideshow tool. https://github.com/gnab/remark
 
 * `《HTML-presentation-tools.md》 <https://gist.github.com/PegasusWang/5d00c2e32943f1e3258e964eb64ce4aa>`_
+
+
+思维导图工具
+--------------------------------------
+
+- coggle.it: 一款免费的在线思维导图工具 https://coggle.it/
