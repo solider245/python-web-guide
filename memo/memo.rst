@@ -43,6 +43,16 @@ Pip
        install('argh')
 
 
+更换源, vi ~/.pip/pip.conf
+
+.. code-block:: shell
+
+   [global]
+   timeout = 60
+   index-url = http://pypi.douban.com/simple
+   trusted-host = pypi.douban.com
+
+
 IPython
 ---------------------------------------------------------------
 

@@ -26,6 +26,7 @@
 * `《三种docstring示例》 <http://bwanamarko.alwaysdata.net/napoleon/format_exception.html>`_
 * `《Simple python style guide》 <http://liyangliang.me/posts/2015/08/simple-python-style-guide/>`_
 * `《python编程规范》 <http://blog.ganyutao.com/downloading/python%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83.pdf>`_
+* `《practice-go》 <https://dave.cheney.net/practical-go/presentations/qcon-china.html>`_
 
 
 一个简洁的代码规范(想偷懒的话直接用pylint 和 autopep8 过一遍，强烈建议项目开始的时候就使用 pylint 检测代码，保持 clean code):
