@@ -676,6 +676,9 @@ Ffmpeg && youbute-dl
    # 截图
    ffmpeg -ss 00:10:00 -i "Apache Sqoop Tutorial.mp4" -y -f image2 -vframes 1 test.png
 
+   # 提取音频mp3, https://stackoverflow.com/questions/9913032/ffmpeg-to-extract-audio-from-video
+   ffmpeg -i sample.avi -q:a 0 -map a sample.mp3
+
    # 连接视频
    $ cat input.txt
    file '/path/to/file1'
