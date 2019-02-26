@@ -221,13 +221,20 @@ Proxy
 mac电脑下设置socks5代理 https://blog.csdn.net/fafa211/article/details/78387899
 
 
-Zsh
+Oh My Zsh
 ---------------------------------------------------------------
 .. code-block:: shell
 
    # Powerlevel9k 是一个强大的 zsh 主题
    # iTerm2 + Oh My Zsh + Solarized color scheme + Meslo powerline font + [Powerlevel9k] - (macOS)
    # https://gist.github.com/kevin-smets/8568070
+
+   # https://gist.github.com/dogrocker/1efb8fd9427779c827058f873b94df95
+   # 安装自动补全插件
+   git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+   # nvi ~/.zshrc
+   plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 
 Ubuntu相关
