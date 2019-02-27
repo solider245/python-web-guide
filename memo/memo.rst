@@ -22,6 +22,12 @@ Python
 
    # pyenv 安装多个版本的 python : https://github.com/pyenv/pyenv
    # pyenv-virtualenv https://github.com/pyenv/pyenv-virtualenv
+   # mac install multiple version of python
+   brew install pyenv pyenv-virtualenv
+   pyenv install 3.6.4  # install python3.6.4
+   pyenv virtualenv 3.6.4 v3.6.4
+   pyenv activate v3.6.4
+   pyenv deactivate
 
    # 格式化 json，这个可以配置在 vim 里用来格式化当前 json 文本
    cat some.json | python -m json.tool
