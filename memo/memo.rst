@@ -22,6 +22,12 @@ Python
 
    # pyenv 安装多个版本的 python : https://github.com/pyenv/pyenv
    # pyenv-virtualenv https://github.com/pyenv/pyenv-virtualenv
+   # mac install multiple version of python
+   brew install pyenv pyenv-virtualenv
+   pyenv install 3.6.4  # install python3.6.4
+   pyenv virtualenv 3.6.4 v3.6.4
+   pyenv activate v3.6.4
+   pyenv deactivate
 
    # 格式化 json，这个可以配置在 vim 里用来格式化当前 json 文本
    cat some.json | python -m json.tool
@@ -41,6 +47,16 @@ Pip
    # Example
    if __name__ == '__main__':
        install('argh')
+
+
+更换源, vi ~/.pip/pip.conf
+
+.. code-block:: shell
+
+   [global]
+   timeout = 60
+   index-url = http://pypi.douban.com/simple
+   trusted-host = pypi.douban.com
 
 
 IPython
@@ -205,19 +221,34 @@ Mac
 
    notify("开会啦", "Go Go Go !!!")
 
+
+Mac 蓝牙耳机
+---------------------------------------------------------------
+
+如何给Macbook Pro 开启 Apt-X 蓝牙音质 https://www.jianshu.com/p/a1efa561ed9e
+使用播放器 Audirvana Plus
+
+
 Proxy
 ---------------------------------------------------------------
 
 mac电脑下设置socks5代理 https://blog.csdn.net/fafa211/article/details/78387899
 
 
-Zsh
+Oh My Zsh
 ---------------------------------------------------------------
 .. code-block:: shell
 
    # Powerlevel9k 是一个强大的 zsh 主题
    # iTerm2 + Oh My Zsh + Solarized color scheme + Meslo powerline font + [Powerlevel9k] - (macOS)
    # https://gist.github.com/kevin-smets/8568070
+
+   # https://gist.github.com/dogrocker/1efb8fd9427779c827058f873b94df95
+   # 安装自动补全插件
+   git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+   # nvi ~/.zshrc
+   plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 
 Ubuntu相关
@@ -658,6 +689,9 @@ Ffmpeg && youbute-dl
    # https://gist.github.com/PegasusWang/11b9203ffa699cd8f07e29559cc4d055
    # 截图
    ffmpeg -ss 00:10:00 -i "Apache Sqoop Tutorial.mp4" -y -f image2 -vframes 1 test.png
+
+   # 提取音频mp3, https://stackoverflow.com/questions/9913032/ffmpeg-to-extract-audio-from-video
+   ffmpeg -i sample.avi -q:a 0 -map a sample.mp3
 
    # 连接视频
    $ cat input.txt

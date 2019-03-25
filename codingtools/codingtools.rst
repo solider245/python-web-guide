@@ -24,7 +24,7 @@
 - item2(mac)。替代原生的终端。https://medium.com/@RyanDavidson/make-your-terminal-more-colourful-and-productive-with-iterm2-and-zsh-11b91607b98c
 - brew(mac)。类似ubuntu下的apt-get，可以方便安转各种软件和工具。
 - Alfred(mac): mac 下一款功能强大的工具，不过我一般只用它快速打开软件(比如直接输入app名前缀快速切换不同app)。可以用 python 编写一些自己的 workflow 提高效率(https://github.com/deanishe/alfred-workflow)，比如把时间戳转成日期等。 https://github.com/derimagia/awesome-alfred-workflows
-- Dash(mac): 强悍的文档查询工具。支持非常多编程语言和框架
+- Dash(mac): 强悍的文档查询工具。支持非常多编程语言和框架。windows 和 linux 可以用 Zeal。或者 https://devdocs.io/
 - devdocs.io: 文档查询工具
 - Karabiner-Elements(mac): 改键工具 https://github.com/tekezo/Karabiner-Elements 可以用来禁用内置键盘
 - autojump。方便在命令行里来回跳转目录。
@@ -144,7 +144,7 @@ DSL
 - google doc/石墨: 支持多人协作编辑
 - gitbook + markdown: 可以写文档或电子书
 - sphinx + readthedoc(或者 mkdocs，支持 markdown) （代码即文档），python 项目很多在用这个生成文档。这本小书就是这么写出来的。`编写《Redis 设计与实现》时用到的工具 <http://blog.huangz.me/diary/2013/tools-for-writing-redisbook.html>`_
-- swagger: 适合写 restful 文档
+- swagger/apidocjs: 适合写 restful 文档
 - jupyter(ipython) notebook，可以做笔记或者代码演示或者ppt，支持rst，md等格式，搞数据科学的人用得比较多，配合 RISE (https://github.com/damianavila/RISE) 可以做代码交互式 slideshow，非常好的工具
 - Confluence: 适合作为团队的项目文档工具，团队大了以后文档还是很重要的。
 - vimwiki/emacs org-mode: 依赖于vim/emacs 编辑器，可以做个人笔记，不过笔者还是比较倾向于独立于编辑器的工具。

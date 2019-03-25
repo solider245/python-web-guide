@@ -26,6 +26,7 @@
 * `《三种docstring示例》 <http://bwanamarko.alwaysdata.net/napoleon/format_exception.html>`_
 * `《Simple python style guide》 <http://liyangliang.me/posts/2015/08/simple-python-style-guide/>`_
 * `《python编程规范》 <http://blog.ganyutao.com/downloading/python%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83.pdf>`_
+* `《practice-go》 <https://dave.cheney.net/practical-go/presentations/qcon-china.html>`_
 
 
 一个简洁的代码规范(想偷懒的话直接用pylint 和 autopep8 过一遍，强烈建议项目开始的时候就使用 pylint 检测代码，保持 clean code):
@@ -647,6 +648,15 @@ Readme Driven Development:
 代码分支与代码管理
 --------------------------------------
 做好代码分之管理，分清楚开发、特性、bugfix等代码分枝，不要在同一个分之上一下修改太多功能，导致修复问题不好定位。比如经常和同事做一个需求，结果一个人把几个需求堆到一个分之改了，把不该上的功能也给上了，这种小细节还是需要注意的，否则就会给测试、上线等带来严重麻烦。命名分之的时候注意使用有意义的命名，比如附带上task的号码，jira号等等，把分之和你要解决的问题关联起来。
+
+
+代码提交
+--------------------------------------
+对于一个严谨的开发团队来说，即使是 git 提交信息的规范最好也是需要规定的。比如提交是 feature，bugfix，还是修改配置等。
+可以使用工具来规范统一的提交信息。
+
+* `《优雅的提交你的 Git Commit Message》 <https://zhuanlan.zhihu.com/p/34223150>`_
+
 
 注释
 --------------------------------------
