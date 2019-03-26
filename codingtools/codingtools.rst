@@ -280,6 +280,7 @@ Profiler
 - ScreenFlow/Camtasia: 屏幕录制，剪辑工具，收费。笔者用来录制屏幕
 - TunesKit Video Cutter(mac): 视频分割、合并工具
 - iZotope RX6: 音频降噪工具，去除杂音、呼吸声等等，收费
+- Audacity: 音频处理 https://www.audacityteam.org/download/
 - MediaInfo: 查看视频信息
 - HandBrake: 视频压缩工具，免费工具。直接从录屏工具导出的视频体积可能会非常大，推荐压缩后上传到网站
 - SketchBookPro/Deskscribble(收费): 白板/黑板工具，配合 wacom 手写板可以把屏幕当成黑板或者白板使用。模仿可汗学院的授课方式，笔者在讲述 Python 算法的课程里使用到。
