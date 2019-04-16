@@ -197,7 +197,8 @@ Mac
    brew install rmtrash
 
    # 增加 terminal 光标移动速度, https://stackoverflow.com/questions/4489885/how-can-i-increase-the-cursor-speed-in-terminal
-   defaults write NSGlobalDomain KeyRepeat -int 1
+   #defaults write NSGlobalDomain KeyRepeat -int 1
+   mac: 系统设置-> 键盘 -> 修改按键重复到最快，重复前延迟最短。可以让光标在终端里移动更快
 
    # 如何在文件更新之后自动刷新浏览器，需要首先 pip 安装 when-changed
    alias flush_watch_refresh_chrome=" when-changed -v -r -1 -s ./ osascript -e 'tell application \"Google Chrome\" to tell the active tab of its first window to reload' "
