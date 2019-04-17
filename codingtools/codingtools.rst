@@ -163,12 +163,13 @@ DSL
 
 - Sentry: 用来记录异常非常好用，能看到完善的栈信息，方便排错。
 - Fluentd
+- ELK
 
 管理及运维、监控工具(devops很火)
 --------------------------------------
 - Supervisor.进程管理
 - Fabric.应用部署
-- docker.最近比较火的容器技术。很多采用微服务架构的公司使用 docker 作为容器部署服务，或者构建一致的开发环境
+- docker/k8s.最近比较火的容器技术。很多采用微服务架构的公司使用 docker 作为容器部署服务，或者构建一致的开发环境
 - SaltStack和Ansible. 配置管理
 - StatsD\Graphite等web监控
 
