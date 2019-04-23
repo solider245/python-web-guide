@@ -19,6 +19,9 @@ web的学习路线，主要包括概念介绍，参考书籍，开发工具和�
 本小书灵感来自于 requests 库作者的 `python-guide <https://github.com/kennethreitz/python-guide>`_ 。
 你可以使用强大的电子书阅读软件 `calibre <https://calibre-ebook.com/>`_ 下载epub格式阅读。
 
+如果您感兴趣，也可以参考笔者慕课网课程 `《Python服务端工程师就业面试指导》 <https://coding.imooc.com/class/318.html>`_。
+本课程提供了详细的Python后端知识大纲和常考面试题，帮助自学的同学就业。
+
 
 .. image:: https://readthedocs.org/projects/z42/badge/?version=latest
 
