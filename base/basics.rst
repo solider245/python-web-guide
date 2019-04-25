@@ -189,6 +189,7 @@ web 后端工程师的主要工作职责是实现网站、app 业务后端逻辑
 - 进阶建议：看《Fluent Python》 之类的进阶书籍；看优秀的源码，比如 python 一些内置库，flask 等优秀的框架源码(可以用 gitx 之类的工具从代码的最初提交开始看起)，能学到很多惯用法和稍微底层一些的东西。尝试仿写，比如实现个简单的 web 小框架，大概就了解框架的运行原理了。
 
 * `《How to be a Programmer 中文版》 <https://braydie.gitbooks.io/how-to-be-a-programmer/content/zh/>`_
+* `《Roadmap to becoming a web developer in 2019》 <https://github.com/kamranahmedse/developer-roadmap>`_
 
 
 求职与面试
