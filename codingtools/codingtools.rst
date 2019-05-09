@@ -296,13 +296,14 @@ Profiler
 
 HTML Presentation Tools
 --------------------------------------
-如果觉得用 ppt 做分享比较老套，可以尝试一些使用 HTML 来做 slide show 的工具。
+如果觉得用 ppt 做分享比较老套，可以尝试一些使用 HTML 来做 slide show 的工具。或者使用 markdown 生成 html 幻灯片。
 
 - reveal.js: The HTML Presentation Framework
 - RISE: 在 jupyter 里做 slide show，甚至可以直接在网页里运行 Python 代码。 https://github.com/damianavila/RISE
 - remark: A simple, in-browser, markdown-driven slideshow tool. https://github.com/gnab/remark
 
 * `《HTML-presentation-tools.md》 <https://gist.github.com/PegasusWang/5d00c2e32943f1e3258e964eb64ce4aa>`_
+* `《markdown-for-slide-decks.md》 <https://gist.github.com/johnloy/27dd124ad40e210e91c70dd1c24ac8c8>`_
 
 
 思维导图工具
