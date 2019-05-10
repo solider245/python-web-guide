@@ -53,6 +53,17 @@
 * `《玩转 vim 与 Terminal (视频)》 <https://zhuanlan.zhihu.com/vim-video>`_
 
 
+Mac 终端快速配置
+--------------------------------------
+- 安装iterm2 替代难看的原生终端
+- 安装 home brew 方便装各种工具
+- 安装 oh-my-zsh or fish
+- 安装 oh-my-zsh 主题 powerlevel9k 或者 spaceship。或者异步的更快的 https://github.com/romkatv/powerlevel10k 常见主题有(pure, powerlevel9k, spaceship)
+- 安装 vim / spacevim /neovim
+- 最好安装 tmux 用来替代iterm2 分屏
+- 按需安装 htop/autojump/z/fzf/ag 等命令行工具(使用 brew 可以安装)
+
+
 打字速度练习
 --------------------------------------
 - https://typing.io/
