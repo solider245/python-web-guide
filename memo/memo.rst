@@ -542,6 +542,12 @@ Git
     # 禁止 git brach 的时候使用交互式
     git config --global pager.branch false
 
+    # git rm file and add, https://stackoverflow.com/questions/9591407/unstage-a-deleted-file-in-git/9591612
+    # this restores the file status in the index
+    git reset -- <file>
+    # then check out a copy from the index
+    git checkout -- <file>
+
 
 Git工作流
 ------------
