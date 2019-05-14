@@ -153,6 +153,23 @@ Ipdb
    # 如果 pdb 里的内置命令和内置函数冲突了，可以加上 ! 使用内置函数
    !next(iter)
 
+
+Go 调试器dlv
+---------------------------------------------------------------
+
+.. code-block:: shell
+
+   # go get -u github.com/derekparker/delve/cmd/dlv
+   dlv debug main.go
+
+   # 加上命令行参数
+   # https://github.com/go-delve/delve/issues/562
+   dlv debug ./cmd/unit-assignment-cli/main.go -- server
+
+   # 搜索函数，打断点
+   funcs FuncName
+
+
 Mac
 ---------------------------------------------------------------
 .. code-block:: python
