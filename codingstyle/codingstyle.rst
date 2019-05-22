@@ -327,7 +327,7 @@ Web 框架相关：
 - 注释有时候甚至可以帮助你思考设计，比如如果一个类、函数等如果难以用一句话描述它的职责，很有可能就违背了SRP（单一职责原则）。
 - 如果系统调用过程比较复杂， 最好用流程图标识一下。
 - 对于复杂的数据结构(比如嵌套类型)，可以适当注释出类型，比如最新的 tornado 源码里出现了这种注释 ` __impl_kwargs = None  # type: Dict[str, Any]`  。python3 实际上可以加上类型注解了，鉴于目前 python3 的普及程度，估计暂时也没啥用武之地了。
-- 如果是怼不了特殊需求必须 hack 代码才能实现，必须加上注释说明。否则又出现了『黑洞代码』让别人看着一脸懵逼。善于利用 TODO，HACK 当成注释前缀，方便维护代码的人理解。 HACK: ###,  TODO: ####
+- 代码应该像是短文一样从上往下能够容易读懂，如果是怼不了特殊需求必须 hack 代码才能实现，必须加上注释说明。否则又出现了『黑洞代码』让别人看着一脸懵逼。善于利用 TODO，HACK 当成注释前缀，方便维护代码的人理解。 HACK: ###,  TODO: ####
 
 线程安全相关：
 
@@ -352,7 +352,7 @@ python 代码性能优化相关：
   - 并发：使用 gevent(greenlet)、多线程 等并发请求数据，配合 gunicorn(master-slave模型) 部署。不过需要注意使用 gevent mysql driver 需要纯 python 编写的 driver 才能被 monkey patch
   - 多线程/多进程：python 虽然有 GIL，但是 I/O 期间会释放 GIL，多线程仍可以大幅提升 I/O 密集应用的性能；多进程适用于 cpu 密集型应用。(threading/multiprocessing/concurrent.futures)
 
-目前来看基于 gevent 的并发方案是目前比较成熟的方案，也是很多公司首选的方案，在很多公司都有使用，asyncio 生态圈依然不成熟。
+目前来看基于 gevent 的并发方案是目前比较成熟的方案，也是很多公司首选的方案，在很多公司都有使用，asyncio 生态圈等待成熟。
 
 * `《常见性能优化策略的总结-美团点评技术博客》 <https://zhuanlan.zhihu.com/p/24401056>`_
 * `《High Performance Python》 <http://ningning.today/2017/02/05/python/high-performance-python/>`_
