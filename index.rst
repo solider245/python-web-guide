@@ -16,5 +16,6 @@
     skillstack/index
     devtools/index
     python-note/index
+    go-note/index
     memo/*
     *
