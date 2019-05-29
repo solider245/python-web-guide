@@ -1,87 +1,83 @@
-.. _ffmpeg:
+.. _testserver:
 
 
-使用Python 编写的 ffmepg 处理视频的脚本
+用来测试接口的 flask server
 ========================================
 
-拼接视频片段
+测试 server
 ___________________________________
 
 .. code-block:: python
 
-    #!/usr/bin/env python
-    # -*- coding:utf-8 -*-
+    from flask import Flask
+    from flask_restful import reqparse, abort, Api, Resource
+    from flask import request
 
-    """
-    使用 ffmpeg 截取视频片段并且重新拼接
+    app = Flask(__name__)
+    api = Api(app)
 
-    使用方式:
-    提供文件格式如下：比如 input.txt
-
-    ./input.mp4
-    00:01:00 00:02:00
-    00:04:00 00:08:00
-    """
-
-    import os
-    import sys
-
-    CONCAT_FILE = '_concat.txt'
+    TODOS = {
+        'todo1': {'task': 'build an API'},
+        'todo2': {'task': '?????'},
+        'todo3': {'task': 'profit!'},
+    }
 
 
-    def read_input(filepath):
-        with open(filepath) as f:
-            lines = f.readlines()
-            input_mp4 = lines[0].strip()
-            suffix = input_mp4.split('.')[-1]
-            for idx, start_end_time in enumerate(lines[1:]):
-                pair = start_end_time.split()
-                start, end = pair[0], pair[1]
-                part_name = 'part_' + str(idx) + '.' + suffix
-                cmd = "ffmpeg -i {} -ss {} -to {} -c copy {}".format(
-                    input_mp4, start, end, part_name
-                )
-                print(cmd)
-                os.system(cmd)
-                yield part_name
+    def abort_if_todo_doesnt_exist(todo_id):
+        if todo_id not in TODOS:
+            abort(404, message="Todo {} doesn't exist".format(todo_id))
 
 
-    def write_part_to_file(part_list):
-        dir_path = os.path.dirname(os.path.realpath(__file__))
-        filepath_list = []
-        for part_name in part_list:
-            print(part_name)
-            path = os.path.join(dir_path, part_name)
-            filepath_list.append(path)
-
-        with open(CONCAT_FILE, 'w') as f:
-            for path in filepath_list:
-                f.write("file '{}'\n".format(path))
-        return filepath_list
+    parser = reqparse.RequestParser()
+    parser.add_argument('task')
 
 
-    def concat_video():
-        cmd = "ffmpeg -f concat -safe 0 -i {} -c copy output.mp4".format(CONCAT_FILE)
-        os.system(cmd)
+    # Todo
+    # shows a single todo item and lets you delete a todo item
+    class Todo(Resource):
+        def get(self, todo_id):
+            abort_if_todo_doesnt_exist(todo_id)
+            return TODOS[todo_id]
+
+        def delete(self, todo_id):
+            abort_if_todo_doesnt_exist(todo_id)
+            del TODOS[todo_id]
+            return '', 204
+
+        def put(self, todo_id):
+            args = parser.parse_args()
+            task = {'task': args['task']}
+            TODOS[todo_id] = task
+            return task, 201
 
 
-    def remove(filepath_list):
-        """移除中间文件"""
-        for path in filepath_list + [CONCAT_FILE]:
-            if os.path.exists(path):
-                os.remove(path)
+    # TodoList
+    # shows a list of all todos, and lets you POST to add new tasks
+    class TodoList(Resource):
+        def get(self):
+            return TODOS
+
+        def post(self):
+            print(request.data)
+            args = parser.parse_args()
+            todo_id = int(max(TODOS.keys()).lstrip('todo')) + 1
+            todo_id = 'todo%i' % todo_id
+            TODOS[todo_id] = {'task': args['task']}
+            return TODOS[todo_id], 201
 
 
-    def main():
-        try:
-            inputfile = sys.argv[1]
-        except KeyError:
-            print('must need input.txt')
-        partnames = list(read_input(inputfile))
-        filepath_list = write_part_to_file(partnames)
-        concat_video()
-        remove(filepath_list)
+    class TaskList(Resource):
+        def post(self):
+            print(request.data)
+            return {"id": 1}
+
+    ##
+    # Actually setup the Api resource routing here
+    ##
+    api.add_resource(TodoList, '/todos')
+    api.add_resource(Todo, '/todos/<todo_id>')
+    api.add_resource(TaskList, '/tasks')
 
 
     if __name__ == '__main__':
-        main()
+        app.run(debug=True)  # port =5000
