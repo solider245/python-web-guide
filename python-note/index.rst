@@ -10,3 +10,4 @@
     crawler
     funny
     ffmpeg
+    flaskapi
