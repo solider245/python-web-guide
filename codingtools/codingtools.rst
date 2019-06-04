@@ -28,11 +28,7 @@
 - devdocs.io: 文档查询工具
 - Karabiner-Elements(mac): 改键工具 https://github.com/tekezo/Karabiner-Elements 可以用来禁用内置键盘
 - autojump。方便在命令行里来回跳转目录。
-- gitx(mac):方便查看代码提交历史，便于了解整个代码仓库是怎样一步步构建的。http://gitx.frim.nl/user_manual.html
-- tig: text-mode interface for git. 喜欢命令行的可以尝试下。 https://github.com/jonas/tig
 - Magnet/chunkwm 窗口管理辅助工具，拖拽窗口到屏幕边缘可以自动半屏， 全屏或者四分之一屏幕，还可以设定快捷键完成分屏
-- git-extras: 提供了很多方便的 git 工具，比如 git summary 可以输出代码的提交统计。https://github.com/tj/git-extras
-- git-cz: https://github.com/commitizen/cz-cli 用来统一 git commmit 提交信息
 - tldr: 更好的man手册。linux 命令很多，而且linux 的 man 手册比较难用，可以用这个 tldr 替代。https://github.com/tldr-pages/tldr
 - EditorConfig: http://editorconfig.org/ 用来统一编辑器配置。如果成员用不同的操作系统和编辑器，建议使用。尤其是对于 python 这种使用缩进的语言
 - mac-setup: https://github.com/sb2nov/mac-setup mac 下各种编程语言开发环境配置指引
@@ -71,6 +67,15 @@ https://github.com/bhilburn/powerlevel9k/wiki/Show-Off-Your-Config
 - https://typing.io/
 - https://www.keybr.com/
 - http://www.speedcoder.net/
+
+
+Git 相关
+--------------------------------------
+- gitx(mac):方便查看代码提交历史，便于了解整个代码仓库是怎样一步步构建的。http://gitx.frim.nl/user_manual.html
+- tig: text-mode interface for git. 喜欢命令行的可以尝试下。 https://github.com/jonas/tig
+- git-extras: 提供了很多方便的 git 工具，比如 git summary 可以输出代码的提交统计。https://github.com/tj/git-extras
+- git-cz: https://github.com/commitizen/cz-cli 用来统一 git commmit 提交信息，代替 gitmessage
+- pre-commit: git pre commit 工具。 https://pre-commit.com/
 
 
 Chrome 插件
