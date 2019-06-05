@@ -3,6 +3,10 @@
 个人备忘录
 =====================================================================
 
+..
+
+  好记性不如烂笔头. - 中国谚语
+
 
 Python
 ---------------------------------------------------------------
@@ -267,6 +271,10 @@ Oh My Zsh
    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
    # nvi ~/.zshrc
    plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+   # 如何复制上一条命令, https://apple.stackexchange.com/questions/110343/copy-last-command-in-terminal
+   alias lcc='fc -ln -1 | awk "{\$1=\$1}1" ORS="" | pbcopy '
+
 
 
 Ubuntu相关
