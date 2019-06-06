@@ -32,7 +32,7 @@ web的学习路线，主要包括概念介绍，参考书籍，开发工具和�
     # 使用方式 1
     # 本项目页面托管在 readthedoc，如果国内因为网络原因打不开，可以使用如下方式在本地构建
     git clone https://github.com/PegasusWang/python-web-guide.git    # 协作请fork一份你自己的地址
-    pip install -r requeirements.txt  # 安装 Sphinx==1.3.4
+    pip install -r requirements.txt # 安装 Sphinx==1.3.4
     make html   # 构建 html 电子书，之后会在本地生成一个 _build/html 文件夹
     cd _build/html   # 切换到构建好的 html 静态文件夹里
     python3 -m http.server  # 启动一个本地文件服务器，或者 python2 用 python -m SimpleHTTPServer
