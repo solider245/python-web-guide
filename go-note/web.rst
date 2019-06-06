@@ -10,6 +10,11 @@ go语言
 `golang-developer-roadmap <https://github.com/Alikhll/golang-developer-roadmap>`_
 
 
+GOPROXY 代理
+--------------------------------------------------
+export GOPROXY=https://goproxy.io
+
+
 Web框架
 --------------------------------------------------
 
